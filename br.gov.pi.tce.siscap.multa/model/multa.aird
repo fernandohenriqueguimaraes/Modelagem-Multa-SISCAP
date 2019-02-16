@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_KXXOgDI2EemhibInH_Qhew" selectedViews="_Kb2s8DI2EemhibInH_Qhew" version="14.1.0.201810161215">
+    <semanticResources>multa.ecore</semanticResources>
+    <semanticResources>multa.genmodel</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_Kb2s8DI2EemhibInH_Qhew">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_KeGIoDI2EemhibInH_Qhew" name="multa" repPath="#_KdtHEDI2EemhibInH_Qhew">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
+        <target xmi:type="ecore:EPackage" href="multa.ecore#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_KdtHEDI2EemhibInH_Qhew" name="multa">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_KeApEDI2EemhibInH_Qhew" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_KeApETI2EemhibInH_Qhew"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_KeQgsDI2EemhibInH_Qhew" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_KeQgsTI2EemhibInH_Qhew" type="Sirius" element="_KdtHEDI2EemhibInH_Qhew" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_Q9a8gDI2EemhibInH_Qhew" type="2003" element="_Q8-QkDI2EemhibInH_Qhew">
+          <children xmi:type="notation:Node" xmi:id="_Q9d_0DI2EemhibInH_Qhew" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_Q9em4DI2EemhibInH_Qhew" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_TZ7bMDI2EemhibInH_Qhew" type="3010" element="_TZq8gDI2EemhibInH_Qhew">
+              <styles xmi:type="notation:FontStyle" xmi:id="_TZ7bMTI2EemhibInH_Qhew" fontColor="2697711" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_TZ7bMjI2EemhibInH_Qhew"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_at70UDI2EemhibInH_Qhew" type="3010" element="_atzRcDI2EemhibInH_Qhew">
+              <styles xmi:type="notation:FontStyle" xmi:id="_at70UTI2EemhibInH_Qhew" fontColor="2697711" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_at70UjI2EemhibInH_Qhew"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_gL-KUDI2EemhibInH_Qhew" type="3010" element="_gL21kDI2EemhibInH_Qhew">
+              <styles xmi:type="notation:FontStyle" xmi:id="_gL-KUTI2EemhibInH_Qhew" fontColor="2697711" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_gL-KUjI2EemhibInH_Qhew"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_hi4S4DI2EemhibInH_Qhew" type="3010" element="_hiwXEDI2EemhibInH_Qhew">
+              <styles xmi:type="notation:FontStyle" xmi:id="_hi4S4TI2EemhibInH_Qhew" fontColor="2697711" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_hi4S4jI2EemhibInH_Qhew"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_Q9em4TI2EemhibInH_Qhew"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_Q9em4jI2EemhibInH_Qhew"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Q9a8gTI2EemhibInH_Qhew" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q9a8gjI2EemhibInH_Qhew" x="55" y="75" width="158" height="100"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_KeQgsjI2EemhibInH_Qhew"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_Q8-QkDI2EemhibInH_Qhew" name="Multa" tooltipText="" width="12" height="10">
+      <target xmi:type="ecore:EClass" href="multa.ecore#//Multa"/>
+      <semanticElements xmi:type="ecore:EClass" href="multa.ecore#//Multa"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_jiv44TI2EemhibInH_Qhew" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="Liquid" foregroundColor="255,252,216">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_TZq8gDI2EemhibInH_Qhew" name="empresa : EString" tooltipText="">
+        <target xmi:type="ecore:EAttribute" href="multa.ecore#//Multa/empresa"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="multa.ecore#//Multa/empresa"/>
+        <ownedStyle xmi:type="diagram:BundledImage" uid="_YmiqATI2EemhibInH_Qhew" labelAlignment="LEFT">
+          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_atzRcDI2EemhibInH_Qhew" name="valor : EDouble = 0.0" tooltipText="">
+        <target xmi:type="ecore:EAttribute" href="multa.ecore#//Multa/valor"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="multa.ecore#//Multa/valor"/>
+        <ownedStyle xmi:type="diagram:BundledImage" uid="_dTKxMTI2EemhibInH_Qhew" labelAlignment="LEFT">
+          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_gL21kDI2EemhibInH_Qhew" name="justificativa : EString" tooltipText="">
+        <target xmi:type="ecore:EAttribute" href="multa.ecore#//Multa/justificativa"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="multa.ecore#//Multa/justificativa"/>
+        <ownedStyle xmi:type="diagram:BundledImage" uid="_hJhXsTI2EemhibInH_Qhew" labelAlignment="LEFT">
+          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_hiwXEDI2EemhibInH_Qhew" name="linkEvidencia : EString" tooltipText="">
+        <target xmi:type="ecore:EAttribute" href="multa.ecore#//Multa/linkEvidencia"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="multa.ecore#//Multa/linkEvidencia"/>
+        <ownedStyle xmi:type="diagram:BundledImage" uid="_jixHAzI2EemhibInH_Qhew" labelAlignment="LEFT">
+          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_KdymoDI2EemhibInH_Qhew"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Package']"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Validation']"/>
+    <target xmi:type="ecore:EPackage" href="multa.ecore#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

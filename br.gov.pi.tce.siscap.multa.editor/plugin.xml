@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated multa -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="br.gov.pi.tce.siscap.multa.presentation.MultaModelWizardID"
+            name="%_UI_MultaModelWizard_label"
+            class="br.gov.pi.tce.siscap.multa.presentation.MultaModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/MultaModelFile.gif">
+         <description>%_UI_MultaModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated multa -->
+      <editor
+            id="br.gov.pi.tce.siscap.multa.presentation.MultaEditorID"
+            name="%_UI_MultaEditor_label"
+            icon="icons/full/obj16/MultaModelFile.gif"
+            extensions="multa"
+            class="br.gov.pi.tce.siscap.multa.presentation.MultaEditor"
+            contributorClass="br.gov.pi.tce.siscap.multa.presentation.MultaActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

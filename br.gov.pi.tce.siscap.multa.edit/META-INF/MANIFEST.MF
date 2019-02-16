@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: br.gov.pi.tce.siscap.multa.edit;singleton:=true
+Automatic-Module-Name: br.gov.pi.tce.siscap.multa.edit
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Activator: br.gov.pi.tce.siscap.multa.provider.MultaEditPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: br.gov.pi.tce.siscap.multa.provider
+Require-Bundle: org.eclipse.core.runtime,
+ br.gov.pi.tce.siscap.multa;visibility:=reexport,
+ org.eclipse.emf.edit;visibility:=reexport
+Bundle-ActivationPolicy: lazy
