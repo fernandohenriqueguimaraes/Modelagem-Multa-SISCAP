@@ -5,6 +5,7 @@ package br.gov.pi.tce.siscap.multa;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
 
 /**
  * <!-- begin-user-doc -->
@@ -102,13 +103,31 @@ public interface MultaPackage extends EPackage {
 	int MULTA__LINK_EVIDENCIA = 3;
 
 	/**
+	 * The feature id for the '<em><b>Inicio</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MULTA__INICIO = 4;
+
+	/**
+	 * The feature id for the '<em><b>Fim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MULTA__FIM = 5;
+
+	/**
 	 * The number of structural features of the '<em>Multa</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MULTA_FEATURE_COUNT = 4;
+	int MULTA_FEATURE_COUNT = 6;
 
 	/**
 	 * The number of operations of the '<em>Multa</em>' class.
@@ -118,6 +137,52 @@ public interface MultaPackage extends EPackage {
 	 * @ordered
 	 */
 	int MULTA_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link br.gov.pi.tce.siscap.multa.impl.ConjuntoMultaImpl <em>Conjunto Multa</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see br.gov.pi.tce.siscap.multa.impl.ConjuntoMultaImpl
+	 * @see br.gov.pi.tce.siscap.multa.impl.MultaPackageImpl#getConjuntoMulta()
+	 * @generated
+	 */
+	int CONJUNTO_MULTA = 1;
+
+	/**
+	 * The feature id for the '<em><b>Nome Conjunto</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONJUNTO_MULTA__NOME_CONJUNTO = 0;
+
+	/**
+	 * The feature id for the '<em><b>Multas</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONJUNTO_MULTA__MULTAS = 1;
+
+	/**
+	 * The number of structural features of the '<em>Conjunto Multa</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONJUNTO_MULTA_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Conjunto Multa</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONJUNTO_MULTA_OPERATION_COUNT = 0;
 
 	/**
 	 * Returns the meta object for class '{@link br.gov.pi.tce.siscap.multa.Multa <em>Multa</em>}'.
@@ -172,6 +237,60 @@ public interface MultaPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getMulta_LinkEvidencia();
+
+	/**
+	 * Returns the meta object for the attribute '{@link br.gov.pi.tce.siscap.multa.Multa#isInicio <em>Inicio</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Inicio</em>'.
+	 * @see br.gov.pi.tce.siscap.multa.Multa#isInicio()
+	 * @see #getMulta()
+	 * @generated
+	 */
+	EAttribute getMulta_Inicio();
+
+	/**
+	 * Returns the meta object for the attribute '{@link br.gov.pi.tce.siscap.multa.Multa#isFim <em>Fim</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Fim</em>'.
+	 * @see br.gov.pi.tce.siscap.multa.Multa#isFim()
+	 * @see #getMulta()
+	 * @generated
+	 */
+	EAttribute getMulta_Fim();
+
+	/**
+	 * Returns the meta object for class '{@link br.gov.pi.tce.siscap.multa.ConjuntoMulta <em>Conjunto Multa</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Conjunto Multa</em>'.
+	 * @see br.gov.pi.tce.siscap.multa.ConjuntoMulta
+	 * @generated
+	 */
+	EClass getConjuntoMulta();
+
+	/**
+	 * Returns the meta object for the attribute '{@link br.gov.pi.tce.siscap.multa.ConjuntoMulta#getNomeConjunto <em>Nome Conjunto</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Nome Conjunto</em>'.
+	 * @see br.gov.pi.tce.siscap.multa.ConjuntoMulta#getNomeConjunto()
+	 * @see #getConjuntoMulta()
+	 * @generated
+	 */
+	EAttribute getConjuntoMulta_NomeConjunto();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link br.gov.pi.tce.siscap.multa.ConjuntoMulta#getMultas <em>Multas</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Multas</em>'.
+	 * @see br.gov.pi.tce.siscap.multa.ConjuntoMulta#getMultas()
+	 * @see #getConjuntoMulta()
+	 * @generated
+	 */
+	EReference getConjuntoMulta_Multas();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -237,6 +356,48 @@ public interface MultaPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute MULTA__LINK_EVIDENCIA = eINSTANCE.getMulta_LinkEvidencia();
+
+		/**
+		 * The meta object literal for the '<em><b>Inicio</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MULTA__INICIO = eINSTANCE.getMulta_Inicio();
+
+		/**
+		 * The meta object literal for the '<em><b>Fim</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MULTA__FIM = eINSTANCE.getMulta_Fim();
+
+		/**
+		 * The meta object literal for the '{@link br.gov.pi.tce.siscap.multa.impl.ConjuntoMultaImpl <em>Conjunto Multa</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see br.gov.pi.tce.siscap.multa.impl.ConjuntoMultaImpl
+		 * @see br.gov.pi.tce.siscap.multa.impl.MultaPackageImpl#getConjuntoMulta()
+		 * @generated
+		 */
+		EClass CONJUNTO_MULTA = eINSTANCE.getConjuntoMulta();
+
+		/**
+		 * The meta object literal for the '<em><b>Nome Conjunto</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CONJUNTO_MULTA__NOME_CONJUNTO = eINSTANCE.getConjuntoMulta_NomeConjunto();
+
+		/**
+		 * The meta object literal for the '<em><b>Multas</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONJUNTO_MULTA__MULTAS = eINSTANCE.getConjuntoMulta_Multas();
 
 	}
 

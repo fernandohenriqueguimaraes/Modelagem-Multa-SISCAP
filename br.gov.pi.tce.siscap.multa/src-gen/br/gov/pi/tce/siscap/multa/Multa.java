@@ -17,6 +17,8 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link br.gov.pi.tce.siscap.multa.Multa#getValor <em>Valor</em>}</li>
  *   <li>{@link br.gov.pi.tce.siscap.multa.Multa#getJustificativa <em>Justificativa</em>}</li>
  *   <li>{@link br.gov.pi.tce.siscap.multa.Multa#getLinkEvidencia <em>Link Evidencia</em>}</li>
+ *   <li>{@link br.gov.pi.tce.siscap.multa.Multa#isInicio <em>Inicio</em>}</li>
+ *   <li>{@link br.gov.pi.tce.siscap.multa.Multa#isFim <em>Fim</em>}</li>
  * </ul>
  *
  * @see br.gov.pi.tce.siscap.multa.MultaPackage#getMulta()
@@ -127,5 +129,57 @@ public interface Multa extends EObject {
 	 * @generated
 	 */
 	void setLinkEvidencia(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Inicio</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Inicio</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Inicio</em>' attribute.
+	 * @see #setInicio(boolean)
+	 * @see br.gov.pi.tce.siscap.multa.MultaPackage#getMulta_Inicio()
+	 * @model
+	 * @generated
+	 */
+	boolean isInicio();
+
+	/**
+	 * Sets the value of the '{@link br.gov.pi.tce.siscap.multa.Multa#isInicio <em>Inicio</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Inicio</em>' attribute.
+	 * @see #isInicio()
+	 * @generated
+	 */
+	void setInicio(boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Fim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Fim</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Fim</em>' attribute.
+	 * @see #setFim(boolean)
+	 * @see br.gov.pi.tce.siscap.multa.MultaPackage#getMulta_Fim()
+	 * @model
+	 * @generated
+	 */
+	boolean isFim();
+
+	/**
+	 * Sets the value of the '{@link br.gov.pi.tce.siscap.multa.Multa#isFim <em>Fim</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Fim</em>' attribute.
+	 * @see #isFim()
+	 * @generated
+	 */
+	void setFim(boolean value);
 
 } // Multa

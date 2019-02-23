@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Generator
+Bundle-SymbolicName: br.gov.pi.tce.siscap.multa.generator
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: br.gov.pi.siscap.multa.generator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: br.gov.pi.tce.siscap.multa;bundle-version="0.1.0",
+ org.eclipse.emf.mwe2.launch;bundle-version="2.10.0",
+ org.apache.log4j;bundle-version="1.2.15",
+ org.apache.commons.logging;bundle-version="1.2.0"

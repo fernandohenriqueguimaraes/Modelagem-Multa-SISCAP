@@ -72,6 +72,11 @@ public class MultaAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseConjuntoMulta(ConjuntoMulta object) {
+			return createConjuntoMultaAdapter();
+		}
+
+		@Override
 		public Adapter defaultCase(EObject object) {
 			return createEObjectAdapter();
 		}
@@ -101,6 +106,20 @@ public class MultaAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createMultaAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link br.gov.pi.tce.siscap.multa.ConjuntoMulta <em>Conjunto Multa</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see br.gov.pi.tce.siscap.multa.ConjuntoMulta
+	 * @generated
+	 */
+	public Adapter createConjuntoMultaAdapter() {
 		return null;
 	}
 

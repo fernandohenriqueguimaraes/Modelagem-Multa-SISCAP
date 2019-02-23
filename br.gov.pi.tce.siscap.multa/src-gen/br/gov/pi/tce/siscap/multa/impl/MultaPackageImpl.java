@@ -2,6 +2,7 @@
  */
 package br.gov.pi.tce.siscap.multa.impl;
 
+import br.gov.pi.tce.siscap.multa.ConjuntoMulta;
 import br.gov.pi.tce.siscap.multa.Multa;
 import br.gov.pi.tce.siscap.multa.MultaFactory;
 import br.gov.pi.tce.siscap.multa.MultaPackage;
@@ -10,6 +11,7 @@ import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 
+import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
@@ -25,6 +27,13 @@ public class MultaPackageImpl extends EPackageImpl implements MultaPackage {
 	 * @generated
 	 */
 	private EClass multaEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass conjuntoMultaEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -146,6 +155,56 @@ public class MultaPackageImpl extends EPackageImpl implements MultaPackage {
 	 * @generated
 	 */
 	@Override
+	public EAttribute getMulta_Inicio() {
+		return (EAttribute) multaEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMulta_Fim() {
+		return (EAttribute) multaEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getConjuntoMulta() {
+		return conjuntoMultaEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getConjuntoMulta_NomeConjunto() {
+		return (EAttribute) conjuntoMultaEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getConjuntoMulta_Multas() {
+		return (EReference) conjuntoMultaEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public MultaFactory getMultaFactory() {
 		return (MultaFactory) getEFactoryInstance();
 	}
@@ -175,6 +234,12 @@ public class MultaPackageImpl extends EPackageImpl implements MultaPackage {
 		createEAttribute(multaEClass, MULTA__VALOR);
 		createEAttribute(multaEClass, MULTA__JUSTIFICATIVA);
 		createEAttribute(multaEClass, MULTA__LINK_EVIDENCIA);
+		createEAttribute(multaEClass, MULTA__INICIO);
+		createEAttribute(multaEClass, MULTA__FIM);
+
+		conjuntoMultaEClass = createEClass(CONJUNTO_MULTA);
+		createEAttribute(conjuntoMultaEClass, CONJUNTO_MULTA__NOME_CONJUNTO);
+		createEReference(conjuntoMultaEClass, CONJUNTO_MULTA__MULTAS);
 	}
 
 	/**
@@ -217,6 +282,19 @@ public class MultaPackageImpl extends EPackageImpl implements MultaPackage {
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMulta_LinkEvidencia(), ecorePackage.getEString(), "linkEvidencia", null, 0, 1, Multa.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMulta_Inicio(), ecorePackage.getEBoolean(), "inicio", null, 0, 1, Multa.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMulta_Fim(), ecorePackage.getEBoolean(), "fim", null, 0, 1, Multa.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(conjuntoMultaEClass, ConjuntoMulta.class, "ConjuntoMulta", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getConjuntoMulta_NomeConjunto(), ecorePackage.getEString(), "nomeConjunto", null, 0, 1,
+				ConjuntoMulta.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEReference(getConjuntoMulta_Multas(), this.getMulta(), null, "multas", null, 0, -1, ConjuntoMulta.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

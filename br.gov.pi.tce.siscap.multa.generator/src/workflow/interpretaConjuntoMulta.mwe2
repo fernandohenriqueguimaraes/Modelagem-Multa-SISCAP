@@ -1,0 +1,16 @@
+module workflow.interpretaConjuntoMulta
+ 
+var model = "br.gov.pi.tce.siscap.multa.generator/src/default.multa"
+ 
+Workflow {
+   bean = org.eclipse.emf.mwe.utils.StandaloneSetup {
+       platformUri = ".."
+       registerGeneratedEPackage = "br.gov.pi.tce.siscap.multa.MultaPackage"
+   }
+ 
+   component = org.eclipse.emf.mwe.utils.Reader {
+       uri = "platform:/resource/${model}"
+       modelSlot = "model"
+   }
+   component = multa.Executa {}
+}

@@ -15,6 +15,12 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute multa.ecore#//Multa/valor"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute multa.ecore#//Multa/justificativa"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute multa.ecore#//Multa/linkEvidencia"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute multa.ecore#//Multa/inicio"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute multa.ecore#//Multa/fim"/>
+    </genClasses>
+    <genClasses ecoreClass="multa.ecore#//ConjuntoMulta">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute multa.ecore#//ConjuntoMulta/nomeConjunto"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference multa.ecore#//ConjuntoMulta/multas"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

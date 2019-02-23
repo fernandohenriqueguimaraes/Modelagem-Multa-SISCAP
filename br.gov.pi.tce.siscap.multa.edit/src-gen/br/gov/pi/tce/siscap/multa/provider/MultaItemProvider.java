@@ -57,6 +57,8 @@ public class MultaItemProvider extends ItemProviderAdapter implements IEditingDo
 			addValorPropertyDescriptor(object);
 			addJustificativaPropertyDescriptor(object);
 			addLinkEvidenciaPropertyDescriptor(object);
+			addInicioPropertyDescriptor(object);
+			addFimPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -124,6 +126,36 @@ public class MultaItemProvider extends ItemProviderAdapter implements IEditingDo
 	}
 
 	/**
+	 * This adds a property descriptor for the Inicio feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addInicioPropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_Multa_inicio_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Multa_inicio_feature", "_UI_Multa_type"),
+						MultaPackage.Literals.MULTA__INICIO, true, false, false,
+						ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE, null, null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Fim feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addFimPropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_Multa_fim_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Multa_fim_feature", "_UI_Multa_type"),
+						MultaPackage.Literals.MULTA__FIM, true, false, false,
+						ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE, null, null));
+	}
+
+	/**
 	 * This returns Multa.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -173,6 +205,8 @@ public class MultaItemProvider extends ItemProviderAdapter implements IEditingDo
 		case MultaPackage.MULTA__VALOR:
 		case MultaPackage.MULTA__JUSTIFICATIVA:
 		case MultaPackage.MULTA__LINK_EVIDENCIA:
+		case MultaPackage.MULTA__INICIO:
+		case MultaPackage.MULTA__FIM:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
 		}

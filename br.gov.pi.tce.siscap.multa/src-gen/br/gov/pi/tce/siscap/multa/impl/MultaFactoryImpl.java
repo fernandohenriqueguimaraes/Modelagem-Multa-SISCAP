@@ -57,6 +57,8 @@ public class MultaFactoryImpl extends EFactoryImpl implements MultaFactory {
 		switch (eClass.getClassifierID()) {
 		case MultaPackage.MULTA:
 			return createMulta();
+		case MultaPackage.CONJUNTO_MULTA:
+			return createConjuntoMulta();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -71,6 +73,17 @@ public class MultaFactoryImpl extends EFactoryImpl implements MultaFactory {
 	public Multa createMulta() {
 		MultaImpl multa = new MultaImpl();
 		return multa;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ConjuntoMulta createConjuntoMulta() {
+		ConjuntoMultaImpl conjuntoMulta = new ConjuntoMultaImpl();
+		return conjuntoMulta;
 	}
 
 	/**

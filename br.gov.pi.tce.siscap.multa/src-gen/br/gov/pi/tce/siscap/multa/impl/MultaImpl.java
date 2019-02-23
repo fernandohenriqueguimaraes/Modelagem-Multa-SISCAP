@@ -24,6 +24,8 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link br.gov.pi.tce.siscap.multa.impl.MultaImpl#getValor <em>Valor</em>}</li>
  *   <li>{@link br.gov.pi.tce.siscap.multa.impl.MultaImpl#getJustificativa <em>Justificativa</em>}</li>
  *   <li>{@link br.gov.pi.tce.siscap.multa.impl.MultaImpl#getLinkEvidencia <em>Link Evidencia</em>}</li>
+ *   <li>{@link br.gov.pi.tce.siscap.multa.impl.MultaImpl#isInicio <em>Inicio</em>}</li>
+ *   <li>{@link br.gov.pi.tce.siscap.multa.impl.MultaImpl#isFim <em>Fim</em>}</li>
  * </ul>
  *
  * @generated
@@ -108,6 +110,46 @@ public class MultaImpl extends MinimalEObjectImpl.Container implements Multa {
 	 * @ordered
 	 */
 	protected String linkEvidencia = LINK_EVIDENCIA_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #isInicio() <em>Inicio</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isInicio()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean INICIO_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isInicio() <em>Inicio</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isInicio()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean inicio = INICIO_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #isFim() <em>Fim</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isFim()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean FIM_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isFim() <em>Fim</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isFim()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean fim = FIM_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -228,6 +270,52 @@ public class MultaImpl extends MinimalEObjectImpl.Container implements Multa {
 	 * @generated
 	 */
 	@Override
+	public boolean isInicio() {
+		return inicio;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInicio(boolean newInicio) {
+		boolean oldInicio = inicio;
+		inicio = newInicio;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MultaPackage.MULTA__INICIO, oldInicio, inicio));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean isFim() {
+		return fim;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFim(boolean newFim) {
+		boolean oldFim = fim;
+		fim = newFim;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MultaPackage.MULTA__FIM, oldFim, fim));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 		case MultaPackage.MULTA__EMPRESA:
@@ -238,6 +326,10 @@ public class MultaImpl extends MinimalEObjectImpl.Container implements Multa {
 			return getJustificativa();
 		case MultaPackage.MULTA__LINK_EVIDENCIA:
 			return getLinkEvidencia();
+		case MultaPackage.MULTA__INICIO:
+			return isInicio();
+		case MultaPackage.MULTA__FIM:
+			return isFim();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -261,6 +353,12 @@ public class MultaImpl extends MinimalEObjectImpl.Container implements Multa {
 			return;
 		case MultaPackage.MULTA__LINK_EVIDENCIA:
 			setLinkEvidencia((String) newValue);
+			return;
+		case MultaPackage.MULTA__INICIO:
+			setInicio((Boolean) newValue);
+			return;
+		case MultaPackage.MULTA__FIM:
+			setFim((Boolean) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -286,6 +384,12 @@ public class MultaImpl extends MinimalEObjectImpl.Container implements Multa {
 		case MultaPackage.MULTA__LINK_EVIDENCIA:
 			setLinkEvidencia(LINK_EVIDENCIA_EDEFAULT);
 			return;
+		case MultaPackage.MULTA__INICIO:
+			setInicio(INICIO_EDEFAULT);
+			return;
+		case MultaPackage.MULTA__FIM:
+			setFim(FIM_EDEFAULT);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -308,6 +412,10 @@ public class MultaImpl extends MinimalEObjectImpl.Container implements Multa {
 		case MultaPackage.MULTA__LINK_EVIDENCIA:
 			return LINK_EVIDENCIA_EDEFAULT == null ? linkEvidencia != null
 					: !LINK_EVIDENCIA_EDEFAULT.equals(linkEvidencia);
+		case MultaPackage.MULTA__INICIO:
+			return inicio != INICIO_EDEFAULT;
+		case MultaPackage.MULTA__FIM:
+			return fim != FIM_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -331,6 +439,10 @@ public class MultaImpl extends MinimalEObjectImpl.Container implements Multa {
 		result.append(justificativa);
 		result.append(", linkEvidencia: ");
 		result.append(linkEvidencia);
+		result.append(", inicio: ");
+		result.append(inicio);
+		result.append(", fim: ");
+		result.append(fim);
 		result.append(')');
 		return result.toString();
 	}

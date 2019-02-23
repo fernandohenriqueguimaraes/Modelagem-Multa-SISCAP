@@ -96,6 +96,29 @@ public class MultaItemProviderAdapterFactory extends MultaAdapterFactory
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link br.gov.pi.tce.siscap.multa.ConjuntoMulta} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ConjuntoMultaItemProvider conjuntoMultaItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link br.gov.pi.tce.siscap.multa.ConjuntoMulta}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createConjuntoMultaAdapter() {
+		if (conjuntoMultaItemProvider == null) {
+			conjuntoMultaItemProvider = new ConjuntoMultaItemProvider(this);
+		}
+
+		return conjuntoMultaItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -202,6 +225,8 @@ public class MultaItemProviderAdapterFactory extends MultaAdapterFactory
 	public void dispose() {
 		if (multaItemProvider != null)
 			multaItemProvider.dispose();
+		if (conjuntoMultaItemProvider != null)
+			conjuntoMultaItemProvider.dispose();
 	}
 
 }

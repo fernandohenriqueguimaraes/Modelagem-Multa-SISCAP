@@ -31,6 +31,15 @@ public interface MultaFactory extends EFactory {
 	Multa createMulta();
 
 	/**
+	 * Returns a new object of class '<em>Conjunto Multa</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Conjunto Multa</em>'.
+	 * @generated
+	 */
+	ConjuntoMulta createConjuntoMulta();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
